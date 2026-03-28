@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 
 export function usePageLoaded() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isFirstLoad, setIsFirstLoad] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
@@ -14,9 +15,14 @@ export function usePageLoaded() {
       return images.every((img) => img.complete && img.naturalHeight !== 0);
     };
 
+    const markLoaded = () => {
+      setIsFirstLoad(false);
+      setIsLoaded(true);
+    };
+
     const initTimer = setTimeout(() => {
       if (checkAllImages()) {
-        setIsLoaded(true);
+        markLoaded();
         return;
       }
 
@@ -24,13 +30,13 @@ export function usePageLoaded() {
         if (checkAllImages()) {
           clearInterval(interval);
           clearTimeout(safetyTimeout);
-          setIsLoaded(true);
+          markLoaded();
         }
       }, 100);
 
       const safetyTimeout = setTimeout(() => {
         clearInterval(interval);
-        setIsLoaded(true);
+        markLoaded();
       }, 5000);
 
       return () => {
@@ -42,5 +48,5 @@ export function usePageLoaded() {
     return () => clearTimeout(initTimer);
   }, [location.pathname]);
 
-  return isLoaded;
+  return { isLoaded, isFirstLoad };
 }

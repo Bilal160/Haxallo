@@ -15,6 +15,6 @@
   --shadow-card-hover: 0 8px 32px 0 rgba(0, 0, 0, 0.13);
   --shadow-card-sm: 0 4px 24px 0 rgba(0, 0, 0, 0.07);
   --shadow-timebox: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
-  --shadow-deal: 0 4px 24px 0 rgba(0, 0, 0, 0.10);
-  --shadow-deal-active: 0 8px 32px 0 rgba(212, 168, 75, 0.18);
+  --shadow-deal: 0 2px 12px 0 rgba(0, 0, 0, 0.06);
+  --shadow-deal-active: 0 4px 20px 0 rgba(212, 168, 75, 0.14);
 }
