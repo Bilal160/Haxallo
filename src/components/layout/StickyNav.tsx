@@ -19,7 +19,7 @@ const StickyNav = () => {
   return (
     <>
       <nav className="sticky top-0 z-50 bg-secondary">
-        <div className="flex items-center justify-between px-4 lg:px-16 h-full">
+        <div className="flex items-center justify-between px-4 lg:px-16 py-3 lg:py-0 h-full">
           <img src={logo} alt="Logo" className="h-7 lg:h-auto" />
 
           <div className="hidden lg:flex gap-1 relative h-full flex-1 justify-end overflow-x-auto scrollbar-none">
