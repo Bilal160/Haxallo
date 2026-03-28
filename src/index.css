@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Inter", serif;
+  --font-secondary: "Montserrat", sans-serif;
+
+  --color-primary: #ae6f28;
+  --color-secondary: #2f251d;
+  --color-text-primary: #6A6A6A;
+  --color-card-title: #484848;
+  --color-accent: #EFC96D;
+
+  --shadow-card: 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 32px 0 rgba(0, 0, 0, 0.13);
+  --shadow-card-sm: 0 4px 24px 0 rgba(0, 0, 0, 0.07);
+  --shadow-timebox: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+  --shadow-deal: 0 4px 24px 0 rgba(0, 0, 0, 0.10);
+  --shadow-deal-active: 0 8px 32px 0 rgba(212, 168, 75, 0.18);
+}

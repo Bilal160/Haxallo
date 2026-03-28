@@ -1,0 +1,17 @@
+export const stickyNavItems = [
+  { label: "Explore", to: "/" },
+  { label: "Services", to: "/services" },
+  { label: "Nightlife", to: "/nightlife" },
+  { label: "Travel", to: "/travel" },
+  { label: "Accommodation", to: "/accommodation" },
+  { label: "Spaces", to: "/spaces" },
+  { label: "Subscriptions", to: "/subscriptions" },
+  { label: "Vouchers", to: "/vouchers" },
+  { label: "Rentals", to: "/rentals" },
+  { label: "Voting", to: "/voting" },
+  { label: "Shop", to: "/shop" },
+  { label: "Essentials", to: "/essentials" },
+  { label: "Healthcare", to: "/healthcare" },
+  { label: "Jobs", to: "/jobs" },
+  { label: "Marketplace", to: "/marketplace" },
+];
